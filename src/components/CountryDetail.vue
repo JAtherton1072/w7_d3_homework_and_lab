@@ -1,6 +1,11 @@
 <template lang="html">
-  <div>
-    <h3>{{country.name}}</h3>
+  <div class="country-details">
+    <h3>Name: {{country.name}}</h3>
+    <p>Captial: {{country.capital}}</p>
+    <p>Population: {{country.population}}</p>
+    <img class="lrg-flag" :src="country.flag" />
+
+
   </div>
 </template>
 
@@ -12,4 +17,16 @@ export default {
 </script>
 
 <style lang="css" scoped>
+
+.lrg-flag {
+  height: 100px
+}
+.country-details {
+height: 300px;
+width: 300px;
+border: solid coral;
+text-align: center;
+
+}
+
 </style>
